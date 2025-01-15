@@ -31,6 +31,9 @@ function playGame() {
     let computerChoice = getComputerChoice();
     console.log('Computer chose: ' + computerChoice);
 
+    playRound(humanChoice, computerChoice);
+
+
     // Create a function that gets computer and user's choice as parameters and compares them to check who the winner is
     // Add value to score variables
     function playRound(humanChoice, computerChoice) {
@@ -71,15 +74,15 @@ function playGame() {
         }
     }
 
-    for (let rounds = 1; rounds <= 5; rounds++) {
-        // Call playRound function
-        playRound(humanChoice, computerChoice);
-
+    for (let rounds = 1; rounds < 5; rounds++) {
         // Get new values for human and computer choices
         humanChoice = getHumanChoice();
         console.log('You chose: ' + humanChoice);
         computerChoice = getComputerChoice();
         console.log('Computer chose: ' + computerChoice);
+
+        // Call playRound function
+        playRound(humanChoice, computerChoice);
     }
 
     if (humanScore > computerScore) {
