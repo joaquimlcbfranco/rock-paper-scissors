@@ -32,6 +32,7 @@ function playGame() {
     console.log('Computer chose: ' + computerChoice);
 
     playRound(humanChoice, computerChoice);
+    console.log('Current score is: You - ' + humanScore + '; Computer - ' + computerScore);
 
 
     // Create a function that gets computer and user's choice as parameters and compares them to check who the winner is
@@ -83,6 +84,7 @@ function playGame() {
 
         // Call playRound function
         playRound(humanChoice, computerChoice);
+        console.log('Current score is: You - ' + humanScore + '; Computer - ' + computerScore);
     }
 
     if (humanScore > computerScore) {
