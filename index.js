@@ -17,7 +17,7 @@ function getHumanChoice() {
     
     return humanChoice;
 }
-
+/*
 playGame();
 
 function playGame() {
@@ -96,4 +96,4 @@ function playGame() {
     else {
         console.log('It\'s a tie!');
     }
-}
+}*/
