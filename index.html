@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -20,29 +20,31 @@
     </div>
 
     <div class="content">
-        <div class="results">
+        <div class="results hide">
             <p class="human-score">0</p>
-            <p class="computer-sscore">0</p>
+            <p>-</p>
+            <p class="computer-score">0</p>
         </div>
         <div class="game">
-            <div class="start-game hide">
-                <button class="title">START GAME</p>
+            <div class="start-game">
+                <button class="title start-button">START GAME</p>
             </div>
-            <div class="human">
+            <div class="human hide">
                 <p class="title">PLAYER</p>
-                <button type="button" class="human-rock">ROCK</button>
-                <button type="button" class="human-paper">PAPER</button>
-                <button type="button" class="human-scissors">SCISSORS</button>
+                <button class="human-button">ROCK</button>
+                <button class="human-button">PAPER</button>
+                <button class="human-button">SCISSORS</button>
             </div>
-            <div class="computer">
+            <div class="computer hide">
                 <p class="title">COMPUTER</p>
-                <button type="button" class="computer-rock">ROCK</button>
-                <button type="button" class="computer-paper">PAPER</button>
-                <button type="button" class="computer-scissors">SCISSORS</button>
+                <button class="computer-button">ROCK</button>
+                <button class="computer-button">PAPER</button>
+                <button class="computer-button">SCISSORS</button>
             </div>
         </div>
+        <p class="feedback-message">Press the button to start playing!</p>
+        <button class="title play-again hide">PLAY AGAIN</button>
     </div>
-
     <div class="footer">
         <p>Copyright © 2025 joaquimlcbfranco</p>
     </div>
